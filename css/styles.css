@@ -8,18 +8,33 @@
   align-items: center;
 }
 
-#blanks, .btn{
-  margin: auto;
+.flex-2{
+  display: flex;
+  align-items: flex-start;
 }
 
-.btn{
-  border: solid 2px red;
+#blanks, .btn{
+  margin: auto;
 }
 
 .half{
   width: 50%;
 }
 
-h1{
+.btn {
+  border: 2px black solid;
   margin: auto;
+  transition: all 0.5s ease;
+  background: transparent;
+  padding: 5px;
+}
+
+.btn:hover {
+  border: 2px green solid;
+  padding: 5px 15px 5px 15px;
+}
+
+#answers{
+  margin-top: 20px;
+  display: none;
 }
