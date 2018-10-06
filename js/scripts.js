@@ -1,16 +1,16 @@
 // business logic
-function list(a){
-  if (a%15===0){
-		return "pingpong";
+function list(x){
+  if (x%15===0){
+		return "<li>"+"pingpong"+"</li>";
 		}
-	else if(a%3===0){
-		return "ping";
+	else if(x%3===0){
+		return "<li>"+"ping"+"</li>";
 		}
-	else if(a%5===0){
-		return "pong";
+	else if(x%5===0){
+		return "<li>"+"pong"+"</li>";
 		}
 	else{
-		return a;
+		return "<li>"+x+"</li>";
 		}
 };
 
