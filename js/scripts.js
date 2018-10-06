@@ -1,16 +1,16 @@
 // business logic
-function list(x){
-  if (x%15===0){
+function list(num){
+  if (num%15===0){
 		return "<li>"+"pingpong"+"</li>";
   }
-	else if(x%3===0){
+	else if(num%3===0){
 		return "<li>"+"ping"+"</li>";
   }
-	else if(x%5===0){
+	else if(num%5===0){
 		return "<li>"+"pong"+"</li>";
   }
 	else{
-		return "<li>"+x+"</li>";
+		return "<li>"+num+"</li>";
   }
 };
 
@@ -23,7 +23,7 @@ $(document).ready(function() {
       alert("Try entering in a number instead! 😉");
     } else {
       $("ul#answers").children("li").remove();
-      for(var i=1; i<=numberInput; i++){  
+      for(var i=1; i<=numberInput; i++){
       $("#answers").append(list(i));
       }
     };
