@@ -1,0 +1,25 @@
+.vh{
+  min-height: 100vh;
+  border: solid 2px red;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+#blanks, .btn{
+  margin: auto;
+}
+
+.btn{
+  border: solid 2px red;
+}
+
+.half{
+  width: 50%;
+}
+
+h1{
+  margin: auto;
+}
