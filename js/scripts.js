@@ -15,7 +15,7 @@ function list(num){
 };
 
 // user logic
-$(document).ready(function() {
+$(document).ready(function(){
   $("#blanks form").submit(function(event) {
     event.preventDefault();
     var numberInput = parseInt($("input#numInput").val());

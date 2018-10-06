@@ -1,4 +1,46 @@
-.bg-form{
+label {
+  color: #FFFFF4;
+  font-weight: 400;
+}
+
+@-webkit-keyframes autofill {
+  to {
+    color: #8BE5BE;;
+    background: transparent;
+  }
+}
+
+.cursor-form:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+#blanks, .btn {
+  margin: auto;
+}
+
+.btn, .btn:focus {
+  border: 1px #FFFFF4 solid;
+  color: #FFFFF4;
+  margin: auto;
+  transition: all 0.5s ease;
+  background: transparent;
+  padding: 5px;
+  font-weight: 200;
+}
+
+.btn:hover {
+  border: 1px #8BE5BE solid;
+  color: #8BE5BE;
+  padding: 5px 15px 5px 15px;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.bg-form {
   background: #3F403E;
   border-color: transparent transparent #8BE5BE transparent;
   box-shadow: none;
@@ -8,83 +50,39 @@
   color: #8BE5BE;
 }
 
-.bg-form:focus{
-    outline: none;
-    box-shadow: none !important;
-    border-top: 1px solid transparent;
-    border-right: 1px solid transparent;
-    border-bottom: 1px solid #8BE5BE;
-    border-left: 1px solid transparent;
-    width: 100%;
-  }
+.bg-form:focus {
+  outline: none;
+  box-shadow: none !important;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid #8BE5BE;
+  border-left: 1px solid transparent;
+  width: 100%;
+}
 
-  @-webkit-keyframes autofill {
-      to {
-          color: #8BE5BE;;
-          background: transparent;
-      }
-  }
-
-.cursor-form:-webkit-autofill {
-      -webkit-animation-name: autofill;
-      -webkit-animation-fill-mode: both;
-  }
-
-.bg{
+.bg {
   background: linear-gradient(90deg, #3F403E 50%, #FFFFF4 50%);
 }
 
-/* #8BE5BE */
-
-label{
-  color: #FFFFF4;
-  font-weight: 400;
-}
-
-.vh{
+.vh {
   min-height: 100vh;
-  /* border: solid 2px red; */
 }
 
-.flex{
+.half {
+  width: 50%;
+}
+
+.flex {
   display: flex;
   align-items: center;
 }
 
-.flex-2{
+.flex-2 {
   display: flex;
   align-items: flex-start;
 }
 
-#blanks, .btn{
-  margin: auto;
-}
-
-.half{
-  width: 50%;
-}
-
-.btn {
-  border: 1px #FFFFF4 solid;
-  color: #FFFFF4;
-  margin: auto;
-  transition: all 0.5s ease;
-  background: transparent;
-  padding: 5px;
-}
-
-.btn:hover {
-  border: 1px #8BE5BE solid;
-  color: #8BE5BE;
-  padding: 5px 15px 5px 15px;
-}
-
-.btn:focus{
-  outline: none;
-  box-shadow: none !important;
-}
-
-.answersContainer{
+.answersContainer {
   margin-top: 20px;
-  /* display: none; */
+  margin-bottom: 20px;
 }
