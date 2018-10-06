@@ -22,7 +22,8 @@ $(document).ready(function() {
     if (isNaN(numberInput)){
       alert("Try entering in a number instead! 😉");
     } else {
-    for(var i=1; i<=numberInput; i++){
+      $("ul#answers").children("li").remove();
+      for(var i=1; i<=numberInput; i++){  
       $("#answers").append(list(i));
       }
     };
