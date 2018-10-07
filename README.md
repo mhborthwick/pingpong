@@ -6,7 +6,7 @@
 
 ## Description
 
-_This web application takes a number from a user and returns a range of numbers starting from 1 with the following exceptions:_
+_This web application takes a number from the user and returns a range of numbers starting from 1 with the following exceptions:_
 
 * _Numbers divisible by 3 are replaced with "ping"_
 * _Numbers divisible by 5 are replaced with "pong"_
